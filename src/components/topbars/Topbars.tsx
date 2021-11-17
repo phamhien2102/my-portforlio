@@ -13,13 +13,13 @@ function Topbars(props: TopbarProps) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#portfolio" className="logo">Hien Pham</a>
-                    <div className="itemContainer" >
-                        <Person className="icon"/>
-                        <span>+1221121212</span>
-                    </div>
+                    {/*<div className="itemContainer" >*/}
+                    {/*    <Person className="icon"/>*/}
+                    {/*    <span>+1221121212</span>*/}
+                    {/*</div>*/}
                     <div className="itemContainer">
                         <Mail className="icon"/>
-                        <span>+1221121212</span>
+                        <span>phamhien2102@gmail.com</span>
                     </div>
                 </div>
 
