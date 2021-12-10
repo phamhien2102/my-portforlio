@@ -1,25 +1,35 @@
-import React, {useState} from 'react';
-import Topbars from "./components/topbars/Topbars";
-import Intro from "./components/intro/Intro";
-import Portfolio from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
-import Testimonials from "./components/testimonials/Testimonials";
-import "./app.scss"
-import Contact from "./components/contact/Contact";
-import Menu from "./components/menu/Menu";
+import React from 'react';
+import './app.scss'
+// import TimeLine from './TimeLine'
+// eslint-disable-next-line
+import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
+import Home from "./components/home/Home";
+import Contact from "./components/contact-1/Contact";
+import Nav from "./components/nav/Nav";
+import About from "./components/about/About"
+import Timeline from "./components/timeline";
+
 function App() {
-    const [menuOpen, setMenuOpen] = useState<boolean>(false)
-    return <div className="app">
-        <Topbars menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-        <div className="sections">
-            <Intro/>
-            {/*<Portfolio/>*/}
-            {/*<Works/>*/}
-            {/*<Testimonials/>*/}
-            {/*<Contact/>*/}
-        </div>
-    </div>;
+    const location = useLocation();
+
+    React.useEffect(() => {
+        console.log('Location changed', location);
+    }, [location]);
+
+    return (
+            <div className="app">
+                <Nav/>
+                <div className="content">
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/timeline" element={<Timeline/>}/>
+                            <Route path="/contact" element={<Contact/>}/>
+                        </Routes>
+                </div>
+            </div>
+    )
+
 }
 
 export default App;

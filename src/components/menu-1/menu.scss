@@ -1,0 +1,8 @@
+@import "../../global";
+.menu {
+  width: 150px;
+  .item {
+    height: 150px;
+    background-color:  $mainColor;
+  }
+}

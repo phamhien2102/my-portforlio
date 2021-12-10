@@ -1,0 +1,101 @@
+@import "src/global";
+
+.card {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .circle {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      background-color: $mainTimelineColor;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      border: 8px solid white;
+      margin-left: 8px;
+    }
+    .smallLine {
+      height: 4px;
+      width: 40px;
+      background-color: $mainColor;
+    }
+    .toDate, .fromDate {
+      padding: 8px;
+      background-color: $mainTimelineColor;
+      margin: 0px 8px;
+      color: white;
+    }
+    .title {
+      font-weight: 500;
+      font-size: 24px;
+      margin: 0px 8px;
+      color: $mainTimelineColor;
+    }
+  }
+  .articlesWrapper {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 24px;
+    overflow: hidden;
+    .articleItem {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 20px;
+      .contentsWrapper {
+        width: inherit;
+        .articleHeader {
+          flex-direction: row;
+          display: flex;
+          align-items: center;
+          margin-left: 24px;
+          .dot {
+            height: 20px;
+            width: 20px;
+            background-color: $mainTimelineColor;
+            border-radius: 40px;
+            border: 8px solid white;
+          }
+          .articleLine {
+            height: 4px;
+            width: 56px;
+            background-color: $mainColor;
+          }
+          .articleTitle {
+            line-height: 40px;
+            font-weight: 200;
+            color: $mainTimelineColor;
+          }
+          .toDate, .fromDate {
+            background-color: $mainTimelineColor;
+            margin: 0px 8px;
+            color: white;
+            padding: 4px;
+            font-weight: 500;
+          }
+        }
+        .worksWrapper {
+          margin-left: 60px;
+          margin-right: 24px;
+        }
+      }
+      .tagsWrapper {
+        width: 40%;
+        display: inline-block;
+        flex-wrap: wrap;
+        word-break: break-all;
+        overflow-wrap: normal;
+        .tag {
+          font-weight: normal;
+          color: white;
+          line-height: 40px;
+          padding: 8px;
+          margin-right: 5px;
+          background-color: $mainTimelineColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "src/global";
+
+.timeline {
+  width: 100%;
+  padding: 0px 100px;
+  .label {
+    padding: 20px;
+    text-align: center;
+    color: $mainTimelineColor;
+  }
+  .resume{
+    .verticalTimeline {
+      width: 4px;
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      left: 290px;
+      background-color: $mainColor;
+      z-index: -1;
+    }
+  }
+}
