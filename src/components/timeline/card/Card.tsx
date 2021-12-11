@@ -53,9 +53,9 @@ function Card(props: Props) {
 
     const CategoryHeader = (props: {iconName: string; categoryName: string}) => (
         <div className="categoryHeader">
-            <div className="circle">{<IconSelector iconName={props.iconName}/>}</div>
-            <div className="smallLine"></div>
-            <div className="title">{props.categoryName}</div>
+            <div className="categoryCircle">{<IconSelector iconName={props.iconName}/>}</div>
+            <div className="categoryLine"></div>
+            <div className="categoryTitle">{props.categoryName}</div>
         </div>
     )
 

@@ -4,7 +4,7 @@ const Education = {
     details: [
         {
             id: 2,
-            title: 'University of Technology (HCMUT)',
+            title: 'UNIVERSITY OF TECHNOLOGY (HCMUT)',
             fromDate: '',
             toDate: '',
             iconName: 'BiBuildingHouse',
@@ -21,7 +21,7 @@ const Education = {
         },
         {
             id: 2,
-            title: 'University of Information Technology (UIT)',
+            title: 'UNIVERSITY OF INFORMATION TECHNOLOGY (UIT)',
             fromDate: '',
             toDate: '',
             iconName: 'BiBuildingHouse',

@@ -3,7 +3,8 @@ import "./timeline.scss"
 import Card from "./card/Card";
 // import {TimeLineRes} from "../../data/TimeLineRes";
 import {TimeLineResponse} from "../../data/TimeLineRes";
-import {TimeLineModel} from "../../models/TimeLineModel";
+import {FaRegArrowAltCircleRight} from "react-icons/all";
+import {Link} from "react-router-dom";
 
 function Timeline() {
 
@@ -15,9 +16,19 @@ function Timeline() {
             </h1>
             <div className="resume">
                 <div className="verticalTimeline"/>
-                {TimeLineResponse.map((item) => <Card data={item} />)}
+                <div className="resumeContent">
+                    {TimeLineResponse.map((item) => <Card data={item} />)}
+                </div>
             </div>
+            <div className="bottom" onClick={()=> {}}>
+                <Link className="portfolioButton" to={"/about"}>
+                    <FaRegArrowAltCircleRight color={'white'}/>
+                    <div className="portfolioLabel">
+                        Continue to my portfolio
+                    </div>
 
+                </Link>
+            </div>
         </div>
     );
 }

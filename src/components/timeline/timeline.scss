@@ -2,21 +2,48 @@
 
 .timeline {
   width: 100%;
-  padding: 0px 100px;
   .label {
     padding: 20px;
     text-align: center;
     color: $mainTimelineColor;
   }
   .resume{
+    padding: 0px 100px;
     .verticalTimeline {
       width: 4px;
       position: absolute;
       top: 0px;
       bottom: 0;
-      left: 290px;
+      left: 280px;
       background-color: $mainColor;
       z-index: -1;
+    }
+    .resumeContent {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    margin-top: 40px;
+    text-align: center;
+    background-color: white;
+    .portfolioButton {
+      display: flex;
+      align-items: center;
+      background-color: $mainTimelineColor;
+      padding: 16px;
+      font-size: 20px;
+      color: white;
+      border-radius: $borderRadius;
+      text-decoration: none;
+      .portfolioLabel {
+        margin-left: 8px;
+      }
     }
   }
 }
