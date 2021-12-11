@@ -1,7 +1,9 @@
 import React from 'react';
 import "./timeline.scss"
 import Card from "./card/Card";
-import {TimeLineRes} from "../../data/TimeLineRes";
+// import {TimeLineRes} from "../../data/TimeLineRes";
+import {TimeLineResponse} from "../../data/TimeLineRes";
+import {TimeLineModel} from "../../models/TimeLineModel";
 
 function Timeline() {
 
@@ -13,7 +15,7 @@ function Timeline() {
             </h1>
             <div className="resume">
                 <div className="verticalTimeline"/>
-                {TimeLineRes.map(item => <Card data={item} />)}
+                {TimeLineResponse.map((item) => <Card data={item} />)}
             </div>
 
         </div>

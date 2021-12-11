@@ -1,8 +1,8 @@
-export class Article {
+export class Project {
     id: number = -1;
     title: string = '';
     fromDate: string = '';
     toDate: string = '';
-    works: string[] = [];
+    descriptions: string[] = [];
     skills: string[] = []
 }

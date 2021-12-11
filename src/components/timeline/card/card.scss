@@ -1,10 +1,11 @@
 @import "src/global";
 
 .card {
-  .header {
+  .categoryHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
     .circle {
       height: 50px;
       width: 50px;
@@ -18,7 +19,7 @@
     }
     .smallLine {
       height: 4px;
-      width: 40px;
+      width: 28px;
       background-color: $mainColor;
     }
     .toDate, .fromDate {
@@ -31,22 +32,23 @@
       font-weight: 500;
       font-size: 24px;
       margin: 0px 8px;
-      color: $mainTimelineColor;
+      color: white;
+      padding: 8px;
+      background-color: $mainTimelineColor;
     }
   }
-  .articlesWrapper {
+  .categoryDetails {
     font-size: 16px;
     font-weight: lighter;
     margin-top: 24px;
     overflow: hidden;
-    .articleItem {
+    .company {
       display: flex;
-      flex-direction: row;
       width: 100%;
       margin-bottom: 20px;
-      .contentsWrapper {
-        width: inherit;
-        .articleHeader {
+      .contents {
+        width: 100%;
+        .companyHeader {
           flex-direction: row;
           display: flex;
           align-items: center;
@@ -58,15 +60,17 @@
             border-radius: 40px;
             border: 8px solid white;
           }
-          .articleLine {
+          .line {
             height: 4px;
-            width: 56px;
+            width: 44px;
             background-color: $mainColor;
           }
-          .articleTitle {
+          .title {
             line-height: 40px;
             font-weight: 200;
             color: $mainTimelineColor;
+            margin: 0px 8px;
+            font-weight: bold;
           }
           .toDate, .fromDate {
             background-color: $mainTimelineColor;
@@ -76,24 +80,74 @@
             font-weight: 500;
           }
         }
-        .worksWrapper {
-          margin-left: 60px;
+        .projectDetail {
+          margin-left: 36px;
           margin-right: 24px;
-        }
-      }
-      .tagsWrapper {
-        width: 40%;
-        display: inline-block;
-        flex-wrap: wrap;
-        word-break: break-all;
-        overflow-wrap: normal;
-        .tag {
-          font-weight: normal;
-          color: white;
-          line-height: 40px;
-          padding: 8px;
-          margin-right: 5px;
-          background-color: $mainTimelineColor;
+          .contentWrapper{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 16px;
+            .basic {
+              width: 100%;
+              margin-right: 24px;
+            }
+            .tagsWrapper {
+              width: 50%;
+              display: flex;
+              flex-wrap: wrap;
+              word-break: break-all;
+              overflow-wrap: normal;
+              justify-content: flex-end;
+              align-items: flex-start;
+
+              .tag {
+                font-weight: normal;
+                color: white;
+                line-height: 36px;
+                padding: 0px 4px;
+                margin: 5px 0px 0px 5px;
+                background-color: $mainTimelineColor;
+              }
+            }
+          }
+
+          .descriptions {
+            margin-left: 76px;
+            line-height: 24px;
+          }
+          .projectTitle {
+            padding: 8px;
+            background-color: $mainColor;
+          }
+          .projectHeader {
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            .dot {
+              height: 12px;
+              width: 12px;
+              background-color: $mainColor;
+              border-radius: 6px;
+            }
+            .line {
+              height: 4px;
+              width: 56px;
+              background-color: white;
+            }
+            .title {
+              line-height: 40px;
+              font-weight: 200;
+              color: $mainTimelineColor;
+            }
+            .toDate, .fromDate {
+              background-color: $mainTimelineColor;
+              margin: 0px 8px;
+              color: white;
+              padding: 4px;
+              font-weight: 500;
+            }
+          }
         }
       }
     }
