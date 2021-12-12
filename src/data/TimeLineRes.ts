@@ -28,11 +28,38 @@ const Education = {
             projects: [
                 {
                     id: 1,
-                    title: 'Computer Engineering',
+                    title: 'Complete a bachelor\'s degree of Computer Engineering',
                     fromDate: 'Sep. 2012',
                     toDate: 'May. 2017',
-                    descriptions: [],
-                    skills: []
+                    descriptions: [
+                        'Team size: 2.',
+                        'Thesis\'s name: Researching to integrate algorithm into Raspberry.',
+                        'Description: Using Haar feature to detect face and HoG features to detect human. Then, both will be integrated into Raspberry Pi 3.',
+
+                    ],
+                    skills: ['Jessies Raspbian (Linux)', 'OpenCV', 'C/C++', 'Raspberry Pi 3']
+                },
+                {
+                    id: 1,
+                    title: 'Eureka Competition',
+                    fromDate: 'Jun. 2015',
+                    toDate: 'Nov. 2015',
+                    descriptions: [
+                        'Team size: 2.',
+                        'Description: Our project is Galvanic Skin Response. The prototype is based heavily on the Truth Meter circuit. Then it will detect the person’s happy or normal status. Use KIT KML46Z of Freescale.',
+                    ],
+                    skills: ['KIT KML46Z', 'C/C++']
+                },
+                {
+                    id: 1,
+                    title: 'Project FPT: Bootloader in KML46Z Freescale.',
+                    fromDate: 'Jun. 2015',
+                    toDate: 'Sep. 2015',
+                    descriptions: [
+                        'Team size: 4.',
+                        'Load another application from PC via UART to RAM finally jumps to the application to run it. Language: C/C++.',
+                    ],
+                    skills: ['KIT KML46Z', 'C/C++']
                 },
             ],
         }
@@ -55,9 +82,10 @@ const Company = {
                     fromDate: 'Jan. 2021',
                     toDate: 'Now',
                     descriptions: [
-                        'I started to use React to build most new web projects I\'ve initiated, and it\'s been an awesome journey. I also created native mobile apps for iOS and Android using React Native and I think I will never go back to Cordova.',
+                        'Description: Mobile app connects to a lot of smart devices as Smart Desk, Smart Frame, Heating & Cooling, Smart Light, ... . Then, connect already, we can control them via mobile app',
+                        'Position: Mobile Developer'
                     ],
-                    skills: ['Javascript', 'React Native', 'Redux Saga', 'Redux Saga', 'Redux Saga', 'Redux Saga', 'Redux Saga']
+                    skills: ['Javascript', 'React Native', 'Redux Saga', 'MQTT']
                 },
                 {
                     id: 1,
@@ -65,7 +93,8 @@ const Company = {
                     fromDate: 'Jun. 2019',
                     toDate: 'Jan. 2021',
                     descriptions: [
-                        'I started to use React to build most new web projects I\'ve initiated, and it\'s been an awesome journey. I also created native mobile apps for iOS and Android using React Native and I think I will never go back to Cordova.',
+                        'Description: Developing and improving features for the website of company. This website provides all pieces of furniture are built around this way of thinking - simple, sleek lines with a great deal of technological innovation in their design and functionality, all to provide people with some of the most advanced and ergonomic desks and chairs on the market.',
+                        'Position: Front End Developer (ReactJS)'
                     ],
                     skills: ['Javascript', 'Reactjs', 'Redux Thunk']
                 },
@@ -75,40 +104,44 @@ const Company = {
                     fromDate: 'Mar. 2019',
                     toDate: 'Jun. 2019',
                     descriptions: [
-                        'I started to use React to build most new web projects I\'ve initiated, and it\'s been an awesome journey. I also created native mobile apps for iOS and Android using React Native and I think I will never go back to Cordova.',
+                        'Description: Using mobile app to control desks via MQTT (The Standard for IoT Messaging). Firstly, app will connect Bluetooth to a desk, then send the connect information (wifi and password) in order that the desk can connect to server MQTT via wifi. Secondly, App connects to server to control the desk via MQTT. A lot of other features as scheduling, reporting and notification.',
+                        'Position: Mobile Developer'
                     ],
-                    skills: ['Javascript', 'React Native', 'Redux Saga']
+                    skills: ['Javascript', 'React Native', 'Redux Saga', 'MQTT']
                 },
             ],
         },
         {
             id: 1,
-            title: 'SAI GON TECHNOLOGY SOLUTIONS',
+            title: 'SAI GON TECHNOLOGY SOLUTIONS (STS)',
             fromDate: '',
             toDate: '',
             projects: [
                 {
-                    id: 1,
-                    title: 'CHAT-HUB',
-                    fromDate: 'April. 2018',
-                    toDate: 'Oct. 2018',
+                    id: 4,
+                    title: 'EVD (Sweden)',
+                    fromDate: 'April. 2019',
+                    toDate: 'May. 2019',
                     descriptions: [
-                        'Position: Mobile developer',
-                        'Responsible for:',
-                        '- Send/ receive message in real time with signalR.',
-                        '- Implement offline mode for mobile.',
-                        '- Fix the calling features'
+                        'Description: Deatures of buying vouchers and reports, printing reports via wifi, Bluetooth connection',
+                        'Position: Mobile developer.',
+                        'Responsibility:',
+                        '- Init project for coding.',
+                        '- Implement local data for the app.',
+                        '- Communicate with client in person for getting requirements and dealing with difficulties.',
+                        '- Build and upload the app to Apple Store and Play Store.'
                     ],
-                    skills: ['Javascript', 'React Native', 'Firebase', 'Agora']
+                    skills: ['React Native', 'One Signal', 'Realm', 'Redux Saga']
                 },
                 {
                     id: 3,
                     title: 'KALMS (Singapore)',
-                    fromDate: 'Oct. 2018',
-                    toDate: 'Dec. 2018',
+                    fromDate: 'Sep. 2018',
+                    toDate: 'Nov. 2018',
                     descriptions: [
+                        'Description: Mobile app which will be sold on vending machines and orders of users',
                         'Position: Mobile developer',
-                        'Responsible for:',
+                        'Responsibility:',
                         '- Implement features as buying products, scanning QR Code, getting transaction histories.',
                         '- Maintain and refactor code.',
                         '- Build and upload Kalms to Apple Store and GG Play Store.'
@@ -116,19 +149,19 @@ const Company = {
                     skills: [ 'React Native', 'Redux Thunk']
                 },
                 {
-                    id: 4,
-                    title: 'EVD (Sweden)',
-                    fromDate: 'April. 2019',
-                    toDate: 'May. 2019',
+                    id: 1,
+                    title: 'CHAT-HUB',
+                    fromDate: 'April. 2018',
+                    toDate: 'Oct. 2018',
                     descriptions: [
-                        'Position: Mobile developer.',
-                        'Responsible for:',
-                        '- Init project for coding.',
-                        '- Implement local data for the app.',
-                        '- Communicate with client in person for getting requirements and dealing with difficulties.',
-                        '- Build and upload the app to Apple Store and Play Store.'
+                        'Description: This is a internal project in STS including a lot of features: calling personal/group; chat; sending videos, images',
+                        'Position: Mobile developer',
+                        'Responsibility:',
+                        '- Send/ receive message in real time with signalR.',
+                        '- Implement offline mode for mobile.',
+                        '- Fix the calling features'
                     ],
-                    skills: ['React Native', 'One Signal', 'Realm', 'Redux Saga']
+                    skills: ['Javascript', 'React Native', 'Firebase', 'Agora']
                 },
             ],
         },
@@ -163,4 +196,4 @@ const OtherExperience = {
     ],
 }
 
-export const TimeLineResponse = [Education, Company, OtherExperience]
+export const TimeLineResponse = [ Company, Education, OtherExperience]
