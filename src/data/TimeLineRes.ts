@@ -104,7 +104,7 @@ const Company = {
                     fromDate: 'Mar. 2019',
                     toDate: 'Jun. 2019',
                     descriptions: [
-                        'Description: Using mobile app to control desks via MQTT (The Standard for IoT Messaging). Firstly, app will connect Bluetooth to a desk, then send the connect information (wifi and password) in order that the desk can connect to server MQTT via wifi. Secondly, App connects to server to control the desk via MQTT. A lot of other features as scheduling, reporting and notification.',
+                        'Description: Using mobile app to control desks. Firstly, mobile app will be connected to desks via Bluetooth. After setup done, we can use mobile app to control desks. In additional, app has other features as scheduling, reporting and notification.',
                         'Position: Mobile Developer'
                     ],
                     skills: ['Javascript', 'React Native', 'Redux Saga', 'MQTT']
