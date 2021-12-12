@@ -59,7 +59,7 @@ function About() {
             <div className="headerTitle">About me</div>
             <div className="introWrapper">
                 <div className="intro">
-                    <div>Hello, I'm Alexis!</div>
+                    <div>Hello, I'm Hiền Phạm!</div>
                     <div>I have been programming for over 15 years including 8 years of professional expertise, I specialise in architecting and building complex javascript web and mobile applications. I enjoy functional programming and technologies like React and Redux. I have strong skills and interest in UI/UX and drive my decisions to provide the best for final user</div>
                 </div>
                 <div className="image">Image</div>
