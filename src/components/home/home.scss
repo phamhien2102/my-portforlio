@@ -1,0 +1,12 @@
+@import "src/global";
+
+.home {
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+  margin-left: 100px;
+  .highlight {
+    line-height: 50px;
+    color: red;
+  }
+}
